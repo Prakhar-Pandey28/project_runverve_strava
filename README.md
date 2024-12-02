@@ -5,9 +5,8 @@ Develop a Python-based API to interact with sports platforms (e.g., Garmin, Coro
 
 ## Features  
 1. API Integration: Fetch activity (distance, time, steps) and health (heart rate, sleep) metrics.  
-2. Data Handling: Clean and structure data in JSON format.  
-3. Dummy App: Display retrieved data in a console or web-based app.  
-
+2. Dummy App: Display retrieved data in a console or web-based app.   
+ 
 ## Setup Instructions  
 
 ### Prerequisites  
