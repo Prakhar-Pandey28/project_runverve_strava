@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Recent Activities</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Distance (km)</th>
+            <th>Duration (mins)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for activity in activities %}
+        <tr>
+            <td>{{ activity.name }}</td>
+            <td>{{ activity.type }}</td>
+            <td>{{ activity.date }}</td>
+            <td>{{ activity.distance }}</td>
+            <td>{{ activity.time }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

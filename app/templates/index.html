@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h1>Athlete Profile</h1>
+        {% if athlete %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ athlete.firstname }} {{ athlete.lastname }}</h5>
+                <p class="card-text">
+                    <strong>Username:</strong> {{ athlete.username }}<br>
+                    <strong>City:</strong> {{ athlete.city }}<br>
+                    <strong>Country:</strong> {{ athlete.country }}<br>
+                    <strong>Total Activities:</strong> {{ athlete.total_activities }}
+                </p>
+            </div>
+        </div>
+        {% else %}
+        <p>Unable to fetch athlete data</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
